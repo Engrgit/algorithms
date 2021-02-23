@@ -1,9 +1,8 @@
 #include <iostream>
 #include <string>
 
-using namespace std;
 // lets declare a function prototype
-void the_display_code(string password);
+void the_display_code(std::string password);
 void addFirst(int&, int&);
 void passingMode(int&, int);
 //void arraySystem(string, int);
@@ -18,11 +17,11 @@ public:
     double calculate_time(double);
     void estimate_error();
     int noframeworks;
-    string passkey;
+    std::string passkey;
 
 
 private:
-    string adminPassword;
+    std::string adminPassword;
 
 };
 
@@ -30,11 +29,11 @@ private:
 class aiengineers: public softwareengineers
 {
 public:
-    string laptoptype;
+    std::string laptoptype;
     int years_of_experience;
 
 private:
-    string password;
+    std::string password;
     bool ways_of_deployement();
 
 };
@@ -43,13 +42,13 @@ private:
 class machinelearning: public aiengineers
 {
 public:
-    string frameworks;
+    std::string frameworks;
     bool ways_of_working();
     bool ways_of_datalabelling();
-    string yourname;
+    std::string yourname;
 
 private:
-    string mlmodel;
+    std::string mlmodel;
     int project_duration;
 
 };
@@ -82,13 +81,13 @@ int main()
     //arraySystem(workerList, 5);
     machinelearning engineer1;
 
-    cout << "Kindly Enter your name here:";
-    cin>> engineer1.yourname;
-    cout<< "Hello " << engineer1.yourname<< endl;
+    std::cout << "Kindly Enter your name here:";
+    std::cin>> engineer1.yourname;
+    std::cout<< "Hello " << engineer1.yourname<< std::endl;
 
-    cout << "Kindly Enter your framework here:";
-    cin>> engineer1.frameworks;
-    cout<< "Your preferred framework is " << engineer1.frameworks << endl;
+    std::cout << "Kindly Enter your framework here:";
+    std::cin>> engineer1.frameworks;
+    std::cout<< "Your preferred framework is " << engineer1.frameworks << std::endl;
 
 
     // ....................................................
@@ -97,26 +96,26 @@ int main()
 
     addFirst(num, num);
 
-    cout << "............................................"<<endl;
+    std::cout << "............................................"<<std::endl;
     passingMode(numb,numb);
-    cout << "............................................"<< endl;
+    std::cout << "............................................"<< std::endl;
 
     aiengineers newcomers;
 
     newcomers.salary = 40000;
     newcomers.paycheck = 32000.00;
     // lets try to use other variable in the class
-    cout<< "This is the salary of the best of the newest newcomer #" << newcomers.salary << endl;
-    cout<<"This is actually the paycheck of the customers #" << newcomers.paycheck << endl;
-    cout<< "Kindly enter your password: ";
-    cin >> newcomers.passkey;
-    cout<<"The inputed password is: "<< newcomers.passkey <<endl;
+    std::cout<< "This is the salary of the best of the newest newcomer #" << newcomers.salary << std::endl;
+    std::cout<<"This is actually the paycheck of the customers #" << newcomers.paycheck << std::endl;
+    std::cout<< "Kindly enter your password: ";
+    std::cin >> newcomers.passkey;
+    std::cout<<"The inputed password is: "<< newcomers.passkey <<std::endl;
 
 
     // Lets try to create an instance of the classes
 
     newcomers.estimate_error();
-    cout<<"The current time in hours is: " << newcomers.calculate_time(73.45)<< endl;
+    std::cout<<"The current time in hours is: " << newcomers.calculate_time(73.45)<< std::endl;
 
 
     return 0;
@@ -125,10 +124,10 @@ int main()
 // Lets experiment with classes
 void the_display_code(string password)
 {
-    cout<<"This is the second code running"<< endl;
-    cout<<"Lets try to access the private variable "<< password <<endl;
+    std::cout<<"This is the second code running"<< std::endl;
+    std::cout<<"Lets try to access the private variable "<< password << std::endl;
     password = "35832787832";
-    cout<<"Lets try to access the private variable "<< password <<endl;
+    std::cout<<"Lets try to access the private variable "<< password <<std::endl;
 
 }
 
@@ -137,19 +136,19 @@ void softwareengineers::estimate_error()
 {
     double error;
     double Actual_value = 1.00;
-    cout<< "Kindly tell us your error: ";
-    cin >> error;
+    std::cout<< "Kindly tell us your error: ";
+    std::cin >> error;
 
     // lets say am estimating the error
     error = (error/Actual_value)* 30;
 
-   cout << "The actual error is: " << error << endl;
+   std::cout << "The actual error is: " << error << std::endl;
 }
 
 
-double softwareengineers::calculate_time(double current_time){
+    double softwareengineers::calculate_time(double current_time){
 
-current_time = current_time/60;
+    current_time = current_time/60;
 
 return current_time;
 
@@ -159,33 +158,33 @@ return current_time;
 void addFirst(int& first, int& second){
 
 
-cout<< "The first of the number "<< first<< endl;
+std::cout<< "The first of the number "<< first<< std::endl;
 
 first = first +2;
 
-cout<< "The sum of both numbers is " << second << endl;
+std::cout<< "The sum of both numbers is " << second << std::endl;
 
 second = second *2;
 
-cout<< "The final second number is " << second << endl;
-cout<< "The first number is "<< first << endl;
+std::cout<< "The final second number is " << second << std::endl;
+std::cout<< "The first number is "<< first << std::endl;
 
 }
 
 
 void passingMode(int& refr, int value){
 
-cout<< "The reference value is "<< refr << endl;
+std::cout<< "The reference value is "<< refr << std::endl;
 
 refr = refr +2;
 
-cout << "The new value of the reference variable is: "<< refr << endl;
-cout << "Lets check out the second number "<< value <<endl;
+std::cout << "The new value of the reference variable is: "<< refr << std::endl;
+std::cout << "Lets check out the second number "<< value <<std::endl;
 value = value *2;
 
-cout<< "The final check of the value variable is "<< value << endl;
+std::cout<< "The final check of the value variable is "<< value << std::endl;
 
-cout << "The new value of the reference variable is: "<< refr << endl;
+std::cout << "The new value of the reference variable is: "<< refr << std::endl;
 
 }
 
