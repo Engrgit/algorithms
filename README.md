@@ -1,2 +1,2 @@
-# Teach C++
-This repository is to document all my codes geared towards C++ programming language
+# Random algorithm solutions with C++
+This repository is to document my random algorithm implementaions with C++
