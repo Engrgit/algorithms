@@ -2,6 +2,7 @@
 #include <string>
 
 using namespace std;
+
 // lets declare a function prototype
 void the_display_code(string password);
 void addFirst(int&, int&);
@@ -70,83 +71,26 @@ struct Credentials{
 
 };
 
-/*
-
-int x;   // unity close
-int *y;  // sheet of paper describing location of something
-
-
-y = &x;   //  y contains address of unity close
-*y = *(&x);  //
-
-
-Credentials  me;
-Credentials  *I;
-
- /*
-*I.get_result(); // error
-(*I).get_result(); // correct  == I->get_result();
-
-
-*shawonjo.getvalue() // shawonjo->getvalue();
-me.get_result();
-
-
-
-int *p = nullptr;
-int *p;
-int num = 78;
-
-p =&num;
-
-
-&p   // == 1200
-&x    // == 1800
-p =&x  // == true == 1800
-*p = *(&x)  // true
-*p = x  // = 78
-
-*(&x) = x
-*(&) = 1
-* = 1/&
-
-*/
+ 
 
 int main()
 {
     //char workerList = {"Ibrahim", "Obaloluwa", "Balikis","Lateefat","Nurudeen"};
     //arraySystem(workerList, 5);
 
-/*
-    struct Credentials{
+
+    struct Credentials
+    {
 
     string firstname;
     string lastname;
     string address;
     string date_of_birth;
 
-};
-
-    //Credentials met;
-    //Credentials *member;
-
-    //member->address = "Ire-Akari Estate ";
-
-
-    //assigning the value of the credentials
+    };
+ 
 
     cout<<"Your default Estate is: " << endl; //<< member->address << endl;
-
-*/
-    //cin >> firstname;
-   //cout "The entered name is " << me.firstname << endl;
-
-
-
-
-
-
-
 
     softwareengineers admin;
 
@@ -220,11 +164,12 @@ void softwareengineers::estimate_error()
 }
 
 
-double softwareengineers::calculate_time(double current_time){
+double softwareengineers::calculate_time(double current_time)
+{
 
-current_time = current_time/60;
+    current_time = current_time/60;
 
-return current_time;
+    return current_time;
 
 }
 
@@ -232,61 +177,51 @@ return current_time;
 void addFirst(int& first, int& second){
 
 
-cout<< "The first of the number "<< first<< endl;
+    cout<< "The first of the number "<< first<< endl;
 
-first = first +2;
+    first = first +2;
 
-cout<< "The sum of both numbers is " << second << endl;
+    cout<< "The sum of both numbers is " << second << endl;
 
-second = second *2;
+    second = second *2;
 
-cout<< "The final second number is " << second << endl;
-cout<< "The first number is "<< first << endl;
-
-}
-
-
-void passingMode(int& refr, int value){
-
-cout<< "The reference value is "<< refr << endl;
-
-refr = refr +2;
-
-cout << "The new value of the reference variable is: "<< refr << endl;
-cout << "Lets check out the second number "<< value <<endl;
-value = value *2;
-
-cout<< "The final check of the value variable is "<< value << endl;
-
-cout << "The new value of the reference variable is: "<< refr << endl;
+    cout<< "The final second number is " << second << endl;
+    cout<< "The first number is "<< first << endl;
 
 }
 
-/*
-// Trying to use more arrays
-void arraySystem(string workerList[], int no_of_Worker){
 
-for(int n=0; n < no_of_Worker; n++){
-    cout<< "The no " << n<< "on the list is: ";
-    cout<< workerList[n] << endl;
+void passingMode(int& refr, int value)
+{
+
+    cout<< "The reference value is "<< refr << endl;
+
+    refr = refr +2;
+
+    cout << "The new value of the reference variable is: "<< refr << endl;
+    cout << "Lets check out the second number "<< value <<endl;
+    value = value *2;
+
+    cout<< "The final check of the value variable is "<< value << endl;
+
+    cout << "The new value of the reference variable is: "<< refr << endl;
+
 }
-}
-*/
+ 
 
 
 string softwareengineers::resetPassword(string password){
 
-password = password + "2";
+    password = password + "2";
 
-return password;
+    return password;
 }
 
 
-string softwareengineers::getPassword()const{
+string softwareengineers::getPassword() const
+{
 
-return adminPassword;
+    return adminPassword;
 
 }
-
-
-// Working with multidimensional arrays
+ 
