@@ -53,7 +53,7 @@ private:
 
 };
 
-/*
+
 struct Credentials{
 
     string firstname;
@@ -72,7 +72,7 @@ struct Credentials{
     cout <<"Kindly enter your firstname" << endl;
     cin >> firstname;
     cout "The entered name is " << me.firstname << endl;
-*/
+
 
 
 int main()
@@ -187,14 +187,4 @@ std::cout<< "The final check of the value variable is "<< value << std::endl;
 std::cout << "The new value of the reference variable is: "<< refr << std::endl;
 
 }
-
-/*
-// Trying to use more arrays
-void arraySystem(string workerList[], int no_of_Worker){
-
-for(int n=0; n < no_of_Worker; n++){
-    cout<< "The no " << n<< "on the list is: ";
-    cout<< workerList[n] << endl;
-}
-}
-*/
+ 
