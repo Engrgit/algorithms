@@ -1,3 +1,6 @@
+// This code declares all the component of a linkedlist except calling it in the main function. I will do that another day
+
+
 #include <iostream>
 using namespace std;
 
