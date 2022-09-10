@@ -1,3 +1,4 @@
+// This code helps us compute triangle area with C programming language
 #include <stdio.h>
 
 int main()
